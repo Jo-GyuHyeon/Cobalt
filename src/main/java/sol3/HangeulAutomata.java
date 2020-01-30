@@ -137,8 +137,8 @@ public class HangeulAutomata {
         for (int i = 0; i < atomicJasoString.length(); i++) {
             char atomicJaso = atomicJasoString.charAt(i);
             char nextAtomicJaso = 0;
-            boolean isLastIndex = i < atomicJasoString.length() - 1;
-            
+            boolean isLastIndex = i == atomicJasoString.length() - 1;
+
             if (!isLastIndex)
                 nextAtomicJaso = atomicJasoString.charAt(i + 1);
 
